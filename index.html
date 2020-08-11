@@ -9,7 +9,7 @@
 <body>
     <div class="container" id="container">
         <div class="logo">
-            <p>Project91939</p>
+            <p id="logo">Project91939</p>
         </div>
         <div class="info" id="info">
             <div class="contact" id="contact">
@@ -34,9 +34,10 @@
             <div class="subHeader">
                 <header>CONTACT US</header>
             </div>
-            <div class="inpt"><input type="text" placeholder="Your Name">
-                <input type="text" placeholder="Email Address">
-                <input type="text" placeholder="Your Message">
+            <div class="inpt">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email Address">
+                <input type="password" placeholder="password">
             </div>
             <div class="button">
                 <button type="submit">Submit</button>
@@ -44,5 +45,18 @@
         </div>
     </div>
 </body>
+<script>
+    function btn() {
+        let button = document.querySelector("button");
+        let logo = document.getElementById("logo")
+        button.onclick = function alert() {
+            logo.innerHTML = `Sorry, Server is currnetly Unavailable`;
+            logo.style.color = "red";
+            logo.style.fontFamily = "monospace";
+        }
+    }
+
+    btn();
+</script>
 
 </html>
