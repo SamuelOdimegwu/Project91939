@@ -16,7 +16,7 @@ html {
 .container {
     border: none;
     width: 800px;
-    height: 400px;
+    height: 600px;
     position: fixed;
     top: 50%;
     left: 50%;
@@ -30,13 +30,14 @@ html {
     margin: 1px 0px 20px 1px;
     font-family: 'Irish Grover', cursive;
     color: #5EE060;
+    font-size: 30px;
 }
 
 .sub-container {
     text-align: center;
     padding: 20px;
     width: 400px;
-    height: 250px;
+    height: 450px;
     border: none;
     display: inline-block;
     position: fixed;
@@ -51,19 +52,23 @@ header {
     font-weight: bolder;
 }
 
+.inpt {
+    margin: 30px auto;
+}
+
 input {
     color: #5EE060;
-    font-size: 15px;
+    font-size: 19px;
     text-align: center;
     display: block;
-    margin: 15px auto;
+    margin: 50px auto;
     padding: 3px;
     border: none;
     border-radius: 20px;
-    width: 250px;
-    height: 25px;
+    width: 350px;
+    height: 35px;
     background: grey;
-    box-shadow: inset 10px 15px 10px black;
+    box-shadow: inset 20px 20px 17px black;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     -ms-border-radius: 20px;
@@ -81,10 +86,16 @@ button {
     box-shadow: 5px 5px 2px black;
     background-color: grey;
     color: white;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 button:active {
     box-shadow: none;
+    background-color: #5EE060;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
 }
 
 button:focus,
@@ -93,13 +104,14 @@ input:focus {
 }
 
 .info {
+    margin: 60px auto;
     display: inline-block;
     width: 300px;
     text-align: center;
 }
 
 .contact {
-    margin: 30px auto;
+    margin: 50px auto;
 }
 
 #contact {
@@ -114,4 +126,8 @@ input:focus {
 .subtext {
     font-size: 15px;
     font-weight: lighter;
+}
+
+.subHeader {
+    margin: 20px auto;
 }
